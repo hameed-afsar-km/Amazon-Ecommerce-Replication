@@ -64,7 +64,5 @@ addBtn.forEach((button) => {
     const productId = button.dataset.productId;
     addToCart(productId);
     updateCartQty();
-
-    console.log(cart);
   })
 })
