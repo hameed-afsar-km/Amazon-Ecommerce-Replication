@@ -20,7 +20,9 @@ select {
   cursor: pointer;
 }
 
-input, select, button {
+input,
+select,
+button {
   font-family: Roboto, Arial;
 }
 
@@ -62,11 +64,6 @@ input, select, button {
   box-shadow: none;
 }
 
-/* These styles will limit text to 2 lines. Anything
-   beyond 2 lines will be replaced with "..."
-   You can find this code by using an A.I. tool or by
-   searching in Google.
-   https://css-tricks.com/almanac/properties/l/line-clamp/ */
 .limit-text-to-2-lines {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -83,7 +80,6 @@ input, select, button {
   color: rgb(196, 80, 0);
 }
 
-/* Styles for dropdown selectors. */
 select {
   color: rgb(33, 33, 33);
   background-color: rgb(240, 240, 240);
@@ -95,7 +91,6 @@ select {
   box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
 }
 
-select:focus,
-input:focus {
+select:focus {
   outline: 2px solid rgb(255, 153, 0);
 }
