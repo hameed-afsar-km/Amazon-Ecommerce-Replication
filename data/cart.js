@@ -59,7 +59,8 @@ export function removeFromCart(productId) {
             if (cartItem.quantity > 1) {
                 newCart.push({
                     productId: productId,
-                    quantity: (cartItem.quantity - 1)
+                    quantity: (cartItem.quantity - 1),
+                    deliveryOptionId: cartItem.deliveryOptionId
                 });
             }
         } else {

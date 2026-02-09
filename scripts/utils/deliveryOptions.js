@@ -13,3 +13,10 @@ export const deliveryOptions = [{
     deliveryDays: 1,
     priceCents: 999
 }];
+
+export function getDeliveryOption(deliveryOptionId) {
+    const deliveryOptionIdString = String(deliveryOptionId);
+    let deliveryOption = deliveryOptions.find((option) => option.id === deliveryOptionIdString);
+    if (!deliveryOption) deliveryOption = deliveryOptions[0];
+    return deliveryOption;
+}
