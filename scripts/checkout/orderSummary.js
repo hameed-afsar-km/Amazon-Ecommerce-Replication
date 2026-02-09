@@ -81,6 +81,8 @@ export function renderOrderSummary() {
             removeFromCart(productId);
             const container = document.querySelector(`.js-cart-item-container-${productId}`);
             if (container) container.remove();
+            renderOrderSummary();
+            renderPaymentSummary();
         });
     });
 

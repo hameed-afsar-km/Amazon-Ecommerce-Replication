@@ -2,6 +2,16 @@ import { products } from '../data/products.js';
 import { cart, addToCart, updateCartQty } from '../data/cart.js';
 import { formatCurrency } from './utils/money.js';
 
+cartNumber();
+
+function cartNumber() {
+  let productCount = 0;
+  cart.forEach((cartElement) => {
+    productCount++;
+  });
+  document.querySelector(".cart-quantity").textContent = productCount;
+}
+
 let productsHTML = '';
 
 products.forEach((product) => {
@@ -64,5 +74,6 @@ addBtn.forEach((button) => {
     const productId = button.dataset.productId;
     addToCart(productId);
     updateCartQty();
+    cartNumber();
   })
 })
