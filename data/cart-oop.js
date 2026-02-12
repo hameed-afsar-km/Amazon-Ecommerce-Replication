@@ -90,10 +90,3 @@ export function updateDeliveryOption(productId, deliveryOptionId) {
     cart.saveToStorage();
 }
 
-// function cartItemsCount() {
-//     let qty = 0;
-//     cart.forEach((e) => {
-//         qty += 1;
-//     })
-//     return qty
-// }
